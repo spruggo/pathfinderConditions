@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pathfinder Conditions Summary</title>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#dff5d8;
+    color:#333;
+    margin:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#2f5d2f;
+}
+
+p{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#f8fff6;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+th{
+    background:#7fbf7f;
+    color:#fff;
+    padding:12px;
+    border:1px solid #5c9c5c;
+    text-align:left;
+}
+
+td{
+    padding:10px;
+    border:1px solid #b8d8b8;
+    vertical-align:top;
+    line-height:1.4;
+}
+
+tr:nth-child(even){
+    background:#edf9ea;
+}
+
+.condition{
+    font-weight:bold;
+    white-space:nowrap;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Pathfinder Conditions Summary</h1>
+
+<p>
+In <strong>Pathfinder</strong>, <strong>conditions</strong> are ongoing effects that alter a character's
+statistics or capabilities. Some conditions have <strong>values</strong> that represent their
+severity; if affected by multiple sources of the same valued condition, apply only the highest value.
+</p>
+
+<table>
+
+<tr>
+    <th style="width:18%;">Condition</th>
+    <th style="width:47%;">Effect(s) per Level / Value</th>
+    <th style="width:35%;">Duration and Removal</th>
+</tr>
+
+<tr>
+<td class="condition">Blinded</td>
+<td>You cannot see. All normal terrain is <strong>difficult terrain</strong>. You cannot detect using vision and automatically critically fail Perception checks requiring sight. You take a <strong>–4 status penalty</strong> to Perception if vision is your only precise sense. Immune to visual effects.</td>
+<td>Ends when the effect expires or is removed by magic such as <em>sound body</em>.</td>
+</tr>
+
+<tr>
+<td class="condition">Broken</td>
+<td><strong>(Objects only)</strong> HP reduced below Broken Threshold. Armor still grants its item bonus but gives a status penalty to AC (–1 light, –2 medium, –3 heavy). Other items cannot be used for their normal function.</td>
+<td>Ends when repaired above its Broken Threshold using the <strong>Repair</strong> action or spells such as <em>mending</em>.</td>
+</tr>
+
+<tr>
+<td class="condition">Clumsy</td>
+<td>Status penalty equal to the value to Dexterity-based checks and DCs (AC, Reflex saves, ranged attacks, Acrobatics, Stealth, and Thievery).</td>
+<td>Ends when the duration expires. Can be counteracted by <em>surging serum</em> or <em>sure footing</em>.</td>
+</tr>
+
+<tr>
+<td class="condition">Concealed</td>
+<td>Creatures must succeed at a <strong>DC 5 flat check</strong> to target you with a Strike or effect.</td>
+<td>Ends when the obscuring effect ends or you leave the area.</td>
+</tr>
+
+<tr>
+<td class="condition">Confused</td>
+<td>You are <strong>off-guard</strong>, cannot use reactions, and must spend all actions attacking or casting offensive spells against the nearest creature.</td>
+<td>Ends when the duration expires. You may attempt a <strong>DC 11 flat check</strong> whenever you take damage.</td>
+</tr>
+
+<tr>
+<td class="condition">Dazzled</td>
+<td>Everything is <strong>concealed</strong> to you. You must succeed at a <strong>DC 5 flat check</strong> to target creatures or objects.</td>
+<td>Ends when the duration expires or through magic such as <em>sound body</em>.</td>
+</tr>
+
+<tr>
+<td class="condition">Deafened</td>
+<td>You cannot hear. You take a <strong>–2 status penalty</strong> to Perception and initiative. Auditory actions require a <strong>DC 5 flat check</strong>.</td>
+<td>Ends when the duration expires or through magic such as <em>sound body</em>.</td>
+</tr>
+
+<tr>
+<td class="condition">Doomed</td>
+<td>Your maximum dying value is reduced by the doomed value. If reduced to 0, you die instantly.</td>
+<td>Value decreases by 1 after a full night's rest. Removed entirely upon death.</td>
+</tr>
+
+<tr>
+<td class="condition">Drained</td>
+<td>Status penalty equal to the value on Constitution-based checks. Lose HP equal to <strong>Level × Value</strong>; maximum HP is reduced by the same amount.</td>
+<td>Value decreases by 1 after a full night's rest. Maximum HP returns as the value decreases.</td>
+</tr>
+
+<tr>
+<td class="condition">Dying</td>
+<td>You are unconscious. At value 4 (or lower if doomed), you die. Make recovery checks each turn.</td>
+<td>Ends when the value reaches 0 or healing restores HP.</td>
+</tr>
+
+<tr>
+<td class="condition">Encumbered</td>
+<td>You are <strong>clumsy 1</strong> and take a <strong>–10-foot status penalty</strong> to all Speeds.</td>
+<td>Ends when excess Bulk is removed.</td>
+</tr>
+
+<tr>
+<td class="condition">Enfeebled</td>
+<td>Status penalty equal to the value on Strength-based checks and DCs (attack rolls, damage rolls, Athletics).</td>
+<td>Ends when the duration expires. Can be counteracted by <em>surging serum</em> or <em>sound body</em>.</td>
+</tr>
+
+<tr>
+<td class="condition">Fatigued</td>
+<td><strong>–1 status penalty</strong> to AC and saving throws. Cannot use exploration activities while traveling.</td>
+<td>Ends after a full night's rest.</td>
+</tr>
+
+<tr>
+<td class="condition">Fleeing</td>
+<td>Must spend all actions moving away from the source. Cannot Delay or Ready.</td>
+<td>Ends when the effect expires.</td>
+</tr>
+
+<tr>
+<td class="condition">Frightened</td>
+<td>Status penalty equal to the value to <strong>all</strong> checks and DCs.</td>
+<td>Value decreases by 1 at the end of each of your turns.</td>
+</tr>
+
+<tr>
+<td class="condition">Grabbed</td>
+<td>You are <strong>off-guard</strong> and <strong>immobilized</strong>. Manipulate actions require a <strong>DC 5 flat check</strong>.</td>
+<td>Ends when the grabber releases you, is incapacitated, the effect expires, or you Escape.</td>
+</tr>
+
+<tr>
+<td class="condition">Immobilized</td>
+<td>You cannot use move actions.</td>
+<td>Ends when the duration expires or by Escaping.</td>
+</tr>
+
+<tr>
+<td class="condition">Off-Guard</td>
+<td><strong>–2 circumstance penalty</strong> to AC.</td>
+<td>Ends when the source of the condition ends.</td>
+</tr>
+
+<tr>
+<td class="condition">Paralyzed</td>
+<td>You are off-guard and cannot act except for purely mental actions.</td>
+<td>Ends when the duration expires. Can be removed by <em>sure footing</em>.</td>
+</tr>
+
+<tr>
+<td class="condition">Persistent Damage</td>
+<td>Take the listed damage at the end of each of your turns.</td>
+<td>After damage, attempt a <strong>DC 15 flat check</strong> (DC 10 with effective assistance).</td>
+</tr>
+
+<tr>
+<td class="condition">Petrified</td>
+<td>Turned to stone. You become an object, cannot act, and cannot sense anything.</td>
+<td>Ends when the duration expires or through appropriate magic.</td>
+</tr>
+
+<tr>
+<td class="condition">Prone</td>
+<td>You are lying down. You are off-guard, take a <strong>–2 circumstance penalty</strong> to attack rolls, and can only Crawl.</td>
+<td>Ends when you use the <strong>Stand</strong> action.</td>
+</tr>
+
+<tr>
+<td class="condition">Sickened</td>
+<td>Status penalty equal to the value on all checks and DCs. Cannot willingly eat or drink.</td>
+<td>Spend 1 action to <strong>Retch</strong>, attempting a Fortitude save to reduce the value.</td>
+</tr>
+
+<tr>
+<td class="condition">Slowed</td>
+<td>Lose a number of actions each turn equal to the value.</td>
+<td>Ends when the effect expires.</td>
+</tr>
+
+<tr>
+<td class="condition">Stunned</td>
+<td>You cannot act. Value-based stunned removes actions until the value reaches 0.</td>
+<td>Ends when the duration expires or the value reaches 0.</td>
+</tr>
+
+<tr>
+<td class="condition">Stupefied</td>
+<td>Status penalty equal to the value on Intelligence-, Wisdom-, and Charisma-based checks and DCs. Spellcasting requires a <strong>flat check (DC 5 + value)</strong>.</td>
+<td>Ends when the duration expires or through magic such as <em>sound body</em>.</td>
+</tr>
+
+<tr>
+<td class="condition">Unconscious</td>
+<td><strong>–4 status penalty</strong> to AC, Reflex, and Perception. You are off-guard, blinded, prone, and cannot act.</td>
+<td>Ends if you take damage, an ally wakes you with Interact, or after appropriate rest.</td>
+</tr>
+
+<tr>
+<td class="condition">Wounded</td>
+<td>If you gain the dying condition, your dying value begins at <strong>0 + wounded value</strong>.</td>
+<td>Ends when restored to full HP and resting for 10 minutes, or via a successful <em>Treat Wounds</em>.</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
